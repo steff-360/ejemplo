@@ -3,8 +3,14 @@ def separador():
 def mostrar_opcion():
     opc=int(input("Ingrese la opcion que desea hacer: "))
     print(opc)
+def agregar_producto(inventario):
+    nombre = input("Nombre del producto: ")
+    precio = float(input("Precio: "))
+    cantidad = int(input("Cantidad: "))
 
-def agregar_prodcutos():
-    pass
-def mmostrar_productos():
-    pass
+    inventario.append({
+        "nombre": nombre,
+        "precio": precio,
+        "cantidad": cantidad
+    })
+    
