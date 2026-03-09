@@ -1,3 +1,4 @@
+
 def separador():
     print("+*30")
 def mostrar_opcion():
@@ -13,4 +14,8 @@ def agregar_producto(inventario):
         "precio": precio,
         "cantidad": cantidad
     })
+    
+def listar_productos(inventario):
+    for producto in inventario:
+        print(producto)
     
